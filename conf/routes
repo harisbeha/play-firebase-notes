@@ -8,3 +8,12 @@ GET     /                           controllers.HomeController.index
 
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)
+
+
+# Notes Routes
+
+GET     /api/notes                  controllers.Notes.index
+GET     /api/note/:id               controllers.Notes.read(id: String)
+POST    /api/note                   controllers.Notes.create
+DELETE  /api/note/:id               controllers.Notes.delete(id: String)
+PATCH   /api/note/:id               controllers.Notes.update(id: String)
