@@ -13,6 +13,7 @@ libraryDependencies ++= Seq(
     ws,
     specs2 % Test,
     "org.scalatestplus.play" %% "scalatestplus-play" % "3.1.2" % Test,
+    "org.webjars" %% "webjars-play" % "2.6.1",
     "org.webjars" % "react" % "15.6.1",
     "org.webjars" % "react-router" % "2.4.0",
     "org.webjars" % "react-bootstrap" % "0.28.1",
